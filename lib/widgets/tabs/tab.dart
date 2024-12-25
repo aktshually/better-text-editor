@@ -10,7 +10,6 @@ class FileTab extends StatefulWidget {
 class _FileTabState extends State<FileTab> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Row(children: [Text("Hello world!")]);
   }
 }

@@ -24,18 +24,10 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({super.key});
-
-  final TextEditingController _controller = TextEditingController();
+  const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Column(children: [
-      TabsContainer(),
-      Row(
-        children: [LineCount(), Editor()],
-      )
-    ]));
+    return Scaffold(body: Editor());
   }
 }
